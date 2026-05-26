@@ -84,7 +84,8 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "FormBuilder API v1");
     c.RoutePrefix = "swagger";
 });
-app.UseHttpsRedirection();
+if (!app.Environment.IsDevelopment())
+    app.UseHttpsRedirection();
 app.UseCors("Angular");
 app.UseAuthorization();
 app.MapControllers();
