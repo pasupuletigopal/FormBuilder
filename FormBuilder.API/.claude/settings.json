@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"c:\\\\Users\\\\anand\\\\Downloads\\\\FormBuilder\")",
+      "Read(//c/Users/anand/Downloads/FormBuilder/**)",
+      "Read(//c/Users/anand/Downloads/**)",
+      "Bash(findstr -i form)"
+    ]
+  }
+}
