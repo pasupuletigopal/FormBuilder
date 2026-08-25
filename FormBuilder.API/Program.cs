@@ -32,6 +32,7 @@ builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<IReportExportService, ReportExportService>();
 builder.Services.AddScoped<ISpReportService, SpReportService>();
 builder.Services.AddScoped<IApiManagerService, ApiManagerService>();
+builder.Services.AddScoped<IAiService, AiService>();
 
 builder.Services.AddHttpClient();
 
